@@ -139,6 +139,18 @@ This failure prevents the WigiDashManager client from connecting to the internal
 
 ![Dev Message](images/2025-10-15(1).png)
 
+---
+
+## Additional Context
+
+Further investigation shows that the issue is linked to Windows Update KB5066133, associated with CVE-2025-55248. The update hardened the Windows Communication Foundation (WCF) HTTP Activation component in the .NET Framework, enforcing stricter registration and binding rules to reduce potential remote-code-execution and privilege-escalation risks.
+
+As a result, applications that rely on basicHttpBinding over local HTTP endpoints - like WigiDashService - can no longer initialize correctly unless the WCF HTTP Activation feature is explicitly re-enabled or bundled into the application.
+
+As someone who works in cybersecurity, I’m usually the last person to suggest lowering security settings. In this case, however, the affected service only exposes local system monitoring metrics, not externally accessible interfaces. Re-enabling HTTP Activation as a temporary workaround carries minimal risk until the vendor releases a properly patched build.
+
+---
+
 ## Tags
 
 `wigidash` `hwinfo` `wcf` `windows` `troubleshooting` `hardware-monitoring`
