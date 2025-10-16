@@ -149,6 +149,11 @@ As a result, applications that rely on basicHttpBinding over local HTTP endpoint
 
 As someone who works in cybersecurity, I’m usually the last person to suggest lowering security settings. In this case, however, the affected service only exposes local system monitoring metrics, not externally accessible interfaces. Re-enabling HTTP Activation as a temporary workaround carries minimal risk until the vendor releases a properly patched build.
 
+## UPDATE 
+
+Looks like this underlying cause is more widespread.
+https://www.techpowerup.com/341976/microsoft-breaks-localhost-with-windows-11-october-update-users-forced-to-revert
+
 ---
 
 ## Tags
