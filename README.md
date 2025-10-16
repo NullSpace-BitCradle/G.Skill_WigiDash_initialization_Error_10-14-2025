@@ -153,4 +153,4 @@ As someone who works in cybersecurity, I’m usually the last person to suggest 
 
 ## Tags
 
-`wigidash` `hwinfo` `wcf` `windows` `troubleshooting` `hardware-monitoring`
+`wigidash` `hwinfo` `wcf` `windows` `troubleshooting` `hardware-monitoring` `KB5066133`
