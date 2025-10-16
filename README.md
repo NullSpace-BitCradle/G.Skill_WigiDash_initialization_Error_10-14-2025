@@ -135,6 +135,10 @@ This failure prevents the WigiDashManager client from connecting to the internal
 
 ---
 
+## Confirmation
+
+![Dev Message](images/2025-10-15(1).png)
+
 ## Tags
 
 `wigidash` `hwinfo` `wcf` `windows` `troubleshooting` `hardware-monitoring`
