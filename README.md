@@ -18,6 +18,8 @@ WigiDash Manager failed to initialize HWiNFO sensors, displaying the error:
 > Failed to initialize HWiNFO. Hardware sensors will not be available.
 > An error occurred while receiving the HTTP response to [http://localhost:8733/WigiDashService/WigiDashWcf/](http://localhost:8733/WigiDashService/WigiDashWcf/). This could be due to the service endpoint binding not using the HTTP protocol. This could also be due to an HTTP request context being aborted by the server (possibly due to the service shutting down).
 
+![WigiDash Error Screenshot](images/2025-10-15.png)
+
 **Observed Behavior:**
 
 * The internal WCF endpoint (`localhost:8733/WigiDashService/WigiDashWcf/`) was unreachable.
